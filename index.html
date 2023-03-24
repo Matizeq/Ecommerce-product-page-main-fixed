@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button class="hamburger" type="button"></button>
+        <div class="shadow hidden"></div>
+        <img src="images/logo.svg" alt="Sneakers" class="logo" />
+        <ul class="main--list hidden">
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+        <div class="cart--container">
+          <span class="product--amount hidden"></span>
+          <img src="images/icon-cart.svg" alt="Cart" class="cart--icon" />
+        </div>
+        <div class="cart hidden">
+          <h1>Cart</h1>
+          <hr />
+          <div class="cart--product--container">
+            <h1 class="empty">Your cart is empty.</h1>
+          </div>
+        </div>
+        <div class="person--image">
+          <img src="images/image-avatar.png" alt="Avatar" />
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="images--container">
+        <img
+          src="images/image-product-1.jpg"
+          alt="Product image"
+          class="product--image"
+        />
+        <div class="previous arrow">
+          <img src="images/icon-previous.svg" alt="Left arrow" />
+        </div>
+        <div class="next arrow">
+          <img src="images/icon-next.svg" alt="Right arrow" />
+        </div>
+        <div class="images--list">
+          <img
+            src="images/image-product-1.jpg"
+            alt="First product image"
+            class="small--image"
+          />
+          <img
+            src="images/image-product-2.jpg"
+            alt="Second product image"
+            class="small--image"
+          />
+          <img
+            src="images/image-product-3.jpg"
+            alt="Third product image"
+            class="small--image"
+          />
+          <img
+            src="images/image-product-4.jpg"
+            alt="Fourth product image"
+            class="small--image"
+          />
+        </div>
+      </div>
+
+      <div class="lightbox hidden">
+        <div class="images--container">
+          <img
+            src="images/icon-close.svg"
+            alt="Close"
+            class="lightbox--close"
+          />
+          <img
+            src="images/image-product-1.jpg"
+            alt="Lightbox product image"
+            class="lightbox--product--image"
+          />
+          <div class="lightbox--arrow lightbox--previous">
+            <img src="images/icon-previous.svg" alt="Left arrow" />
+          </div>
+          <div class="lightbox--arrow lightbox--next">
+            <img src="images/icon-next.svg" alt="Right arrow" />
+          </div>
+          <div class="images--list">
+            <img
+              src="images/image-product-1.jpg"
+              alt="First lightbox product image"
+              class="lightbox--images"
+            />
+            <img
+              src="images/image-product-2.jpg"
+              alt="Second lightbox product image"
+              class="lightbox--images"
+            />
+            <img
+              src="images/image-product-3.jpg"
+              alt="Third lightbox product image"
+              class="lightbox--images"
+            />
+            <img
+              src="images/image-product-4.jpg"
+              alt="Fourth lightbox product image"
+              class="lightbox--images"
+            />
+          </div>
+        </div>
+      </div>
+      <main>
+        <h2>Sneaker company</h2>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p class="description">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything
+          the weather can offer.
+        </p>
+        <div class="price--container">
+          <span class="price">$125.00 <a class="promotion">50%</a></span>
+          <span class="old--price">$250.00</span>
+        </div>
+        <div class="buy">
+          <div class="quantity">
+            <img src="images/icon-minus.svg" alt="Add" class="sign minus" />
+            <a class="counter">0</a>
+            <img src="images/icon-plus.svg" alt="Subtract" class="sign plus" />
+          </div>
+          <button class="add">
+            <img src="images/icon-cart.svg" alt="Cart" />
+            Add to cart
+          </button>
+        </div>
+      </main>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
